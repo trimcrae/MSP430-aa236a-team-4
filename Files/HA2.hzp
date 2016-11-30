@@ -3,65 +3,36 @@
   <project Name="HA2">
     <configuration
       Name="Common"
-      Target="MSP430F1611"
+      Platform="MSP430"
+      Target="MSP430F149"
       build_use_hardware_multiplier="16-Bit Multiplier"
-      c_user_include_directories=".;C:\\Users\\tm9045\\Desktop\\Stanford\\Fall2016\\Spacecraft Design\\Project\\Files;C:\\SSDL\\AA236A_1516_aek_HA2\\SSDL"
-      linker_memory_map_file="$(PackagesDir)/targets/msp430/MSP430F1611.xml"
+      linker_memory_map_file="$(PackagesDir)/targets/msp430/MSP430F149.xml"
       linker_section_placement_file="$(StudioDir)/targets/section_placement_info_ab_iv16.xml"
-      msp430_debug_interface="JTAG"
-      msp430_identify_string="MSP430F1611"
-      msp430_insn_set="MSP430"
-      optimize_register_allocation="None"
-      project_directory=""
+      msp430_identify_string="MSP430F149"
+      msp430_insn_set="MSP430" project_directory=""
       project_type="Executable" />
     <folder Name="Source Files">
       <configuration Name="Common" filter="c;h;s;asm;inc;s43" />
-      <file Name="isr.c" file_name="isr.c" />
-      <file Name="main.c" file_name="main.c" />
-      <file Name="isr.h" file_name="isr.h" />
-      <file Name="adc.c" file_name="adc.c" />
-      <file Name="adc.h" file_name="adc.h" />
-      <file Name="batt.c" file_name="batt.c" />
-      <file Name="batt.h" file_name="batt.h" />
-      <file Name="init.h" file_name="init.h" />
-      <file Name="main.h" file_name="main.h" />
-      <file Name="init.c" file_name="init.c" />
-      <file Name="io2.h" file_name="io2.h" />
-      <file Name="io2.c" file_name="io2.c" />
+      <file file_name="main.c" />
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
-      <file Name="crt0.asm" file_name="$(StudioDir)/src/crt0.asm" />
-    </folder>
-    <folder Name="Salvo Files">
-      <folder Name="Configuration File">
-        <file Name="salvocfg.h" file_name="salvocfg.h" />
-      </folder>
-      <folder Name="Library File">
-        <file file_name="C:/Pumpkin/Salvo/Lib/RA430-v2/libsalvolra430-t.hza" />
-      </folder>
-      <folder Name="Source Files">
-        <file file_name="C:/Pumpkin/Salvo/Src/salvomem.c" />
-      </folder>
-    </folder>
-    <folder Name="Pumpkin Files">
-      <folder Name="Library Files">
-        <file file_name="C:/Pumpkin/Library/MSP430/Src/USART_UART1.c" />
-        <file file_name="C:/Pumpkin/Library/MSP430/Src/USART_UART1_msg_ts.c" />
-      </folder>
+      <file file_name="$(StudioDir)/src/crt0.asm" />
     </folder>
   </project>
   <configuration
-    Name="Debug"
-    build_debug_information="Yes"
-    build_use_hardware_multiplier="Yes"
-    c_user_include_directories=".;C:\\SSDL\\1112\\AA236A\\aek\\1112_AA236A_aek_HA2\\SSDL;C:\\Pumpkin\\Library\\MSP430\\Inc;C:\\Pumpkin\\Salvo\\Inc"
-    linker_printf_fp_enabled="Yes"
-    optimize_register_allocation="None" />
+    Name="MSP430 Debug"
+    inherited_configurations="MSP430;Debug" />
+  <configuration Name="MSP430" Platform="MSP430" hidden="Yes" />
+  <configuration Name="Debug" build_debug_information="Yes" hidden="Yes" />
+  <configuration
+    Name="MSP430 Release"
+    inherited_configurations="MSP430;Release" />
   <configuration
     Name="Release"
     build_debug_information="No"
     c_preprocessor_definitions="NDEBUG"
+    hidden="Yes"
     optimize_block_locality="Yes"
     optimize_copy_propagation="Yes"
     optimize_cross_calling="Standard"
@@ -69,7 +40,5 @@
     optimize_dead_code="Yes"
     optimize_jump_chaining="Yes"
     optimize_jump_threading="Yes"
-    optimize_register_allocation="None"
     optimize_tail_merging="Yes" />
-  <configuration Name="Common" linker_printf_fmt_level="long" />
 </solution>

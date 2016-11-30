@@ -1,13 +1,9 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints>
-  <BreakpointListItem line="38" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="C:/SSDL/1112/AA236A/aek/1112_AA236A_aek_HA2/SSDL/io.c" expression="" />
-  <BreakpointListItem line="43" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="C:/SSDL/1112/AA236A/aek/1112_AA236A_aek_HA2/SSDL/io.c" expression="" />
-  <BreakpointListItem line="44" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="C:/SSDL/1112/AA236A/aek/1112_AA236A_aek_HA2/SSDL/io.c" expression="" />
- </Breakpoints>
+ <Breakpoints/>
  <EEMRegistersWindow>
-  <EEMRegisters moduleClockControl="60d7" generalClockControl="2e" />
+  <EEMRegisters moduleClockControl="0" generalClockControl="2e" />
  </EEMRegistersWindow>
  <EEMStateStorageWindow>
   <EEMStateStorage control="2" />
@@ -20,49 +16,26 @@
  <FrameBufferWindow>
   <FrameBufferWindow addressText="" bufferWidth="-1" bufferHeight="-1" addressSpace="" />
  </FrameBufferWindow>
- <Memory1>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
- </Memory1>
- <Memory2>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
- </Memory2>
- <Memory3>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
- </Memory3>
- <Memory4>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
- </Memory4>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
  <Project>
   <ProjectSessionItem path="HA2" name="unnamed" />
   <ProjectSessionItem path="HA2;HA2" name="unnamed" />
-  <ProjectSessionItem path="HA2;HA2;Pumpkin Files" name="unnamed" />
-  <ProjectSessionItem path="HA2;HA2;Pumpkin Files;Library Files" name="unnamed" />
-  <ProjectSessionItem path="HA2;HA2;Salvo Files" name="unnamed" />
-  <ProjectSessionItem path="HA2;HA2;Salvo Files;Library File" name="unnamed" />
-  <ProjectSessionItem path="HA2;HA2;Salvo Files;Source Files" name="unnamed" />
   <ProjectSessionItem path="HA2;HA2;Source Files" name="unnamed" />
+  <ProjectSessionItem path="HA2;HA2;System Files" name="unnamed" />
  </Project>
- <Register1>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
- </Register1>
- <Register2>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
- </Register2>
- <Register3>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
- </Register3>
- <Register4>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
- </Register4>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
  <TargetWindow programAction="" uploadFileType="" programLoadAddress="" programSize="" uploadFileName="" uploadMemoryInterface="" programFileName="" uploadStartAddress="" programFileType="" uploadSize="" programMemoryInterface="" />
  <TraceWindow>
   <Trace enabled="Yes" />
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Two Seconds" >
-   <Watchpoint linenumber="0" radix="10" name="myCounter" expression="myCounter" filename="" />
-   <Watchpoint linenumber="0" radix="11" name="index" expression="index" filename="" />
-  </Watches>
+  <Watches active="1" update="Never" />
  </Watch1>
  <Watch2>
   <Watches active="0" update="Never" />
@@ -74,9 +47,7 @@
   <Watches active="0" update="Never" />
  </Watch4>
  <Files>
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/tm9045/Desktop/Stanford/Fall2016/Spacecraft Design/Project/Files/main.c" y="0" path="C:/Users/tm9045/Desktop/Stanford/Fall2016/Spacecraft Design/Project/Files/main.c" left="0" selected="1" name="unnamed" top="0" />
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/users/tm9045/desktop/stanford/fall2016/spacecraft design/project/files/config.h" y="3" path="C:/users/tm9045/desktop/stanford/fall2016/spacecraft design/project/files/config.h" left="0" selected="0" name="unnamed" top="0" />
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/pumpkin/library/msp430/src/USART_UART1_msg_ts.c" y="33" path="C:/pumpkin/library/msp430/src/USART_UART1_msg_ts.c" left="0" selected="0" name="unnamed" top="11" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/tm9045/Documents/GitHub/MSP430-aa236a-team-4/Files/main.c" y="7" path="C:/Users/tm9045/Documents/GitHub/MSP430-aa236a-team-4/Files/main.c" left="0" selected="1" name="unnamed" top="0" />
  </Files>
- <MSP430CrossStudioWindow activeProject="HA2" autoConnectTarget="MSP430 Core Simulator" debugSearchFileMap="" fileDialogInitialDirectory="C:/Pumpkin/Salvo/Lib/RA430-v2" fileDialogDefaultFilter="" autoConnectCapabilities="703" debugSearchPath="" buildConfiguration="Debug" />
+ <MSP430CrossStudioWindow activeProject="HA2" autoConnectTarget="" debugSearchFileMap="" fileDialogInitialDirectory="" fileDialogDefaultFilter="*.c" autoConnectCapabilities="0" debugSearchPath="" buildConfiguration="MSP430 Debug" />
 </session>
