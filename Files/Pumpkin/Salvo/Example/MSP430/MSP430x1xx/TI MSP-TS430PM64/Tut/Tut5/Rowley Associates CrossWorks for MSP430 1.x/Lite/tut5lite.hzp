@@ -1,0 +1,48 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution version="1" Name="tut5lite" >
+  <project Name="tut5lite" >
+    <configuration Target="MSP430F149" msp430_identify_string="MSP430F149" linker_memory_map_file="$(StudioDir)/targets/MSP430F149.xml" c_user_include_directories="$(ProjectDir);$(ProjectDir)/..;$(ProjectDir)/../.." project_directory="" project_type="Executable" msp430_debug_interface="JTAG" Name="Common" c_system_include_directories="$(ProjectDir)/../../../../../../../../../Salvo/Inc;$(StudioDir)/include" build_use_hardware_multiplier="Yes" />
+    <folder Name="Project Files" >
+      <configuration filter="c;h;s;asm;inc;s43" Name="Common" />
+      <folder Name="Source Files" >
+        <file file_name="../../tut5.c" Name="tut5.c" />
+        <file file_name="../tut5_isr.c" Name="tut5_isr.c" />
+      </folder>
+      <folder Name="Include Files" >
+        <file file_name="../tut5.h" Name="tut5.h" />
+      </folder>
+      <folder Name="Help Files" >
+        <file file_name="../abstract.txt" Name="abstract.txt" />
+      </folder>
+    </folder>
+    <folder Name="System Files" >
+      <configuration filter="xml" Name="Common" />
+      <file file_name="$(StudioDir)/src/crt0.asm" Name="crt0.asm" />
+      <file file_name="$(StudioDir)/targets/section_placement.xml" Name="section_placement.xml" >
+        <configuration Name="Common" file_type="Section Placement" />
+      </file>
+    </folder>
+    <configuration Target="MSP430F169" msp430_identify_string="MSP430F169;Preliminary_MSP430F16x" linker_memory_map_file="$(StudioDir)/targets/MSP430F169.xml" msp430_debug_interface="JTAG" Name="Debug" build_use_hardware_multiplier="Yes" />
+    <folder Name="Salvo Files" >
+      <folder Name="Help Files" >
+        <file file_name="../../../../../../../../Doc/newforSalvo4.txt" Name="newforSalvo4.txt" />
+      </folder>
+      <folder Name="Libraries" >
+        <file file_name="../../../../../../../../Lib/RA430-v1/libsalvofra430-t.hza" Name="libsalvofra430-t.hza" >
+          <configuration Name="Common" file_type="Library" />
+        </file>
+      </folder>
+      <folder Name="Source Files" >
+        <file file_name="../../../../../../../../Src/salvomem.c" Name="salvomem.c" />
+      </folder>
+      <folder Name="Configuration File" >
+        <file file_name="salvocfg.h" Name="salvocfg.h" />
+      </folder>
+      <folder Name="Target-Specific Source Files" />
+      <folder Name="Include Files" />
+    </folder>
+  </project>
+  <configuration Target="MSP430F149" msp430_identify_string="MSP430F149" linker_memory_map_file="$(StudioDir)/targets/MSP430F149.xml" optimize_register_allocation="None" msp430_debug_interface="JTAG" build_debug_information="Yes" Name="Debug" build_use_hardware_multiplier="Yes" />
+  <configuration optimize_jump_chaining="Yes" optimize_block_locality="Yes" optimize_tail_merging="Yes" c_preprocessor_definitions="NDEBUG" optimize_cross_calling="Standard" build_debug_information="No" optimize_jump_threading="Yes" Name="Release" optimize_dead_code="Yes" optimize_cross_jumping="Yes" optimize_copy_propagation="Yes" />
+  <configuration Target="MSP430F169" msp430_identify_string="MSP430F169;Preliminary_MSP430F16x" linker_memory_map_file="$(StudioDir)/targets/MSP430F169.xml" c_user_include_directories="" optimize_register_allocation="None" msp430_debug_interface="JTAG" Name="Common" c_system_include_directories="" build_use_hardware_multiplier="Yes" />
+</solution>

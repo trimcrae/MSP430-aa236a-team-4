@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\LE\tut5le.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Lite\tut5lite.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Pro\tut5pro.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Pro-Lib\tut5pro-lib.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvomac.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvoloc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvotyp.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xfn.r43</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvostr.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\salvohook_wdt_MSP430_CLRWDT.r43</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvocri.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvoscb.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvopsh.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvolbo.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvoprg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvoadc.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430FG4619.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\tut5_isr.r43</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvover.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\string.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430xfn.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tut5.r43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430xG46x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvo.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvomem.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Src\IAR430\salvohook_interrupt_MSP430_GIE.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvoocp.h</file>
+      <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvowar.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\salvomem.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvoctx.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdio.h</file>
+      <file>$PROJ_DIR$\Debug\List\tut5lite.map</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdarg.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\IAR430\salvoportiar430.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvofpt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvompt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvodef.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\salvohook_interrupt_MSP430_GIE.r43</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Src\IAR430\salvohook_wdt_MSP430_CLRWDT.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvomcg.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\tut5lite.d43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Inc\salvolib.h</file>
+      <file>$PROJ_DIR$\..\..\tut5.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Lib\IAR430-v3\salvofiar430x-t.r43</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\..\..\Src\salvomem.c</file>
+      <file>$PROJ_DIR$\..\tut5_isr.c</file>
+      <file>$PROJ_DIR$\..\abstract.txt</file>
+      <file>$PROJ_DIR$\..\..\tut5.h</file>
+      <file>$PROJ_DIR$\salvocfg.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 34 46</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\Src\IAR430\salvohook_interrupt_MSP430_GIE.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 24 19 40 16 55 45 23 0 2 14 48 12 13 37 33 4 47 21 1 31 41 35 20 36 11 27 29 44 5 6 32 10 39 8 25 3 38</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\Src\IAR430\salvohook_wdt_MSP430_CLRWDT.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 24 19 40 16 55 45 23 0 2 14 48 12 13 37 33 4 47 21 1 31 41 35 20 36 11 27 29 44 5 6 32 10 39 8 25 3 38</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\tut5lite.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 17 28 30 22 18 50 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\tut5.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 54 24 19 40 16 55 45 23 0 2 14 48 12 13 37 33 4 47 21 1 31 41 35 20 36 11 27 29 44 5 6 32 10 39 8 25 3 38</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\..\..\Src\salvomem.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 24 19 40 16 55 45 23 0 2 14 48 12 13 37 33 4 47 21 1 31 41 35 20 36 11 27 29 44 5 6 32 10 39 8 25 3 38 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\tut5_isr.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 54 24 19 40 16 55 45 23 0 2 14 48 12 13 37 33 4 47 21 1 31 41 35 20 36 11 27 29 44 5 6 32 10 39 8 25 3 38</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

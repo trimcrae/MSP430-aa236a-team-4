@@ -1,0 +1,331 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\task_sd_measure.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\main.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\task_led.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\task_sd_append.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File004]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\effs_thin_mmc_drv_spi1.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File005]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_led.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File006]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_mhx.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File007]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_power.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File008]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_rand.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File009]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_sd.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File010]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_usb.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File011]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_wdt.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File012]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\csk_io.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File013]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\pic24_uart2_msg_ts.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File014]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\pic24_uart1_msg.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File015]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\pic24_uart1_msg_ts.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File016]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\pic24_uart2.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File017]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\pic24_uart2_msg.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File018]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\pic24_uart1.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File019]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\salvomem.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File020]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\salvohook_interrupt_MCC30_IRQ.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File021]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\salvohook_wdt_MCC30_clrwdt.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File022]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\init.o
+Folder=Intermediary
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall -DCSK_EFFS_THIN_LIB=1 -msmall-code -mconst-in-data
+TraceCmdString=
+DebugOptions=
+[File023]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\sd1pro-lib.cof
+Folder=Output
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=--heap=128 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
+TraceCmdString=
+DebugOptions=
+[File024]
+Location=C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GB210\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib\sd1pro-lib.hex
+Folder=Output
+DeviceName=PIC24FJ256GB210
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\MPLAB_C30\Pro-Lib;C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1;C:\Pumpkin\CubeSatKit\HCC-Embedded\EFFS-THIN\src;C:\Pumpkin\CubeSatKit\PIC24\inc;C:\Pumpkin\Library\PIC24\Inc;C:\Pumpkin\Salvo\Inc||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_measure.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\main.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_led.c|C:\Pumpkin\CubeSatKit\Example\all\all\CubeSatKit_Dev_Board\SD\SD1\task_sd_append.c|C:\Pumpkin\CubeSatKit\PIC24\src\effs_thin_mmc_drv_spi1.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_led.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_mhx.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_power.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_rand.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_sd.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_usb.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_wdt.c|C:\Pumpkin\CubeSatKit\PIC24\src\csk_io.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1_msg_ts.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart2_msg.c|C:\Pumpkin\Library\PIC24\Src\pic24_uart1.c|C:\Pumpkin\Salvo\Src\salvomem.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_interrupt_MCC30_IRQ.c|C:\Pumpkin\Salvo\Src\MCC30\salvohook_wdt_MCC30_clrwdt.c|C:\Pumpkin\CubeSatKit\Example\PIC24\PIC24FJ256GA110\CubeSat_Kit_Dev_Board\SD\SD1\init.c||<obj>||<lib>|C:\Pumpkin\Salvo\Lib\MCC30-v3\libsalvolmcc30sit.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\lib_effs_thin_pic24-sm-coff-1.a|C:\Pumpkin\CubeSatKit\PIC24\lib\mcc30-v3\libpPIC24FJ256GB210-sm-coff.a||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\PIC24F\gld\p24FJ256GB210.gld||
+SuiteArgsString=
+ToolArgsString=--heap=128 -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem -o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)"
+TraceCmdString=
+DebugOptions=
+[TOOL_LOC_STAMPS]
+tool_loc{069BD372-6CA0-40D4-BF2F-5DC806D05083}=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+tool_loc{433C3D55-811D-409D-A6BF-159CF9355B42}=C:\Program Files\Microchip\MPLAB C30\bin\pic30-ld.exe

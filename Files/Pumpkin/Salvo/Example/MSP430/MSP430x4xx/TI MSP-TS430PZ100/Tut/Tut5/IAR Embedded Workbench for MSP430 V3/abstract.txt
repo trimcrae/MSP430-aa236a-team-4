@@ -1,0 +1,46 @@
+/************************************************************
+Copyright (C) 1995-2007 Pumpkin, Inc. and its
+Licensor(s). Freely distributable.
+
+$Source: C:\\RCS\\D\\Pumpkin\\Salvo\\Example\\MSP430\\MSP430x4xx\\TI\040MSP-TS430PZ100\\Tut\\Tut5\\IAR430\\abstract.txt,v $
+$Author: aek $
+$Revision: 3.3 $
+$Date: 2007-11-29 08:33:31-08 $
+
+************************************************************/
+
+             TI MSP-TS430PZ100
+          -----------------------
+          |                     |
+          |    MSP430FG4619     |
+          |                     |
+FET <====>|   LED (P5OUT:BIT1)  |
+          |                     |
+          -----------------------
+
+These projects follow this naming convention:
+
+  tut5tlite.hzp     Salvo Lite project, built with Salvo Lite library
+  tut5le.hzp        Salvo LE   project, built with Salvo LE library
+  tut5tpro-lib.hzp  Salvo Pro  project, built with Salvo Pro library
+  tut5tpro.hzp      Salvo Pro  project, built with Salvo source
+
+These projects implement tutorial program #5 of the Salvo User Manual.
+See the User Manual for a more detailed discussion of this application.
+They are intended for use with IAR Embedded Workbench for MSP430.
+
+The default Salvo hook for controlling global interrupts is
+used. If you use this project as a basis for creating new
+Salvo projects, then this standard hook allows the calling of
+Salvo services from any interrupt source. Better performance
+can be obtained by creating your own salvohook_interrupt.c file
+with individual control of interrupt-enable bits on a
+peripheral-by-peripheral basis.
+
+These projects are for the MSP430FG4619, but will work with any MSP430X
+device with similar peripherals. To select a different processor,
+select the project in the project window, right-click and select
+Options..., select General Common ConfigurationOptions -> Target,
+and select the appropriate processor.
+
+See the Salvo documentation for more information.

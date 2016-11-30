@@ -1,0 +1,137 @@
+/****************************************************************************** 
+(C)Copyright Pumpkin, Inc. Freely distributable.
+
+$Source: C:\\RCS\\D\\Pumpkin\\CubeSatKit\\Example\\PIC24\\PIC24FJ256GA110\\CubeSat_Kit_Dev_Board\\SD\\SD1\\abstract.txt,v $
+$Author: aek $
+$Revision: 3.2 $
+$Date: 2011-09-17 22:12:30-07 $
+
+******************************************************************************/
+
+*******************************************************************************
+
+SD1 SD Card demonstration application for CubeSat Kits running with PIC24-based 
+PPM D1s.
+
+(C)Copyright Pumpkin, Inc. All Rights Reserved.
+
+
+*******************************************************************************
+
+BLOCK DIAGRAM:
+
+             +------------+
+             |    PC      |
+             +------------+
+                   ^
+                   |
+                   v
+             +------------+
+             | MPLAB ICD2 |
+             +------------+
+                   ^
+                   |
+                   v
+             +------------+
+  6-24Vdc    | JFPC-PIC24 |
+    |        +------------+
+    v              ^
+  +----------------|----------------------------------------------------------+
+  | J3             v                                                          |
+  |         +-------------+      CubeSat Kit Development Board                |
+  |         |   PPM D1    |                                                   |
+  |         |     or      |                                                   |
+  |         |   PSPM D    |                                          +---------+
+  |         +-------------+                                          |    SD   |
+  |                                                                  |   Card  |
+  |                                                                  +---------+ 
+  |                                                                           |   
+  |                                                                           |   
+  |                                                                           |   
+  |                                                                           |   
+  |                                                                           |   
+  |     J8             J2                                                     |   
+  +---------------------------------------------------------------------------+
+        ^              ^
+        |              |
+        v              v
+  +------------+ +------------+
+  |     PC     | |     PC     |
+  | 9600,N,8,1 | | 9600,N,8,1 |
+  +------------+ +------------+
+  
+J8: connect via null-modem cable (DB9 receptacle on each end)
+J2: connect via USB cable  
+
+*******************************************************************************
+
+PREREQUISITES:                                      Min. version
+
+  Hardware:
+    Pumpkin CubeSat Kit Development Board              Rev D
+    Pumpkin PPM D1 or PSPM D w/PIC24FJ256GA110         Rev A
+    Pumpkin JFPC-PIC24                                 Rev A
+    Microchip MPLAB ICD 2 or equivalent
+
+  Software:
+    Pumpkin CubeSat Kit /PIC24                         1.2.4
+    Pumpkin CubeSat Kit EFFS-THIN /PIC24               1.9.3
+    Pumpkin Salvo for PIC24/dsPIC                      4.2.2
+    Pumpkin Library for PIC24                          1.0.2
+    Microchip MPLAB C30 compiler (for PIC24/dsPIC)     3.2.3
+    Microchip MPLAB IDE                                8.33
+    
+RECOMMENDED:
+
+  Hardware:
+    Pumpkin CubeSat Kit Test Board A (LED Module)      Rev B     
+
+*******************************************************************************
+
+DESCRIPTION:
+
+This application is an SD Card demo program for Pumpkin CubeSat Kits fitted
+with PPM D1 (PIC24FJ256GA110).
+
+This application is built from a variety of sources and requires that all of 
+the software listed above be installed. 
+
+When running and connected as per the block diagram above, the user will be 
+presented with one terminal screen:
+
+  * J2: a status display, with timestamps in system ticks, with 
+     informational messages
+  * J8: a status display, with timestamps in system ticks, with 
+     informational messages
+     
+This application runs a couple of tasks that demonstrate acquiring and 
+releasing the SD Card resource, and writing to and reading from the SD Card.
+
+EFFS-THIN is a product of HCC-Embedded, http://www.hcc-embedded.com.
+CubeSat Kit customers who purchase the EFFS-THIN SD Card Library
+receive EFFS-THIN for the PIC24 in library form (no source code).
+  
+To use EFFS-THIN, add these two files to your project:
+
+  /Pumpkin/CubeSatKit/PIC24/Lib/MCC30-vX/lib_effs_thin_pic24-sm-coff-N.hza
+  /Pumpkin/CubeSatKit/PIC24/Src/effs_thin_mmc_drv_spi1.c
+  
+and add the following include path to your project's User Include Directories,
+under Project -> Properties -> Preprocessor Options -> User Include Directories.
+
+  /Pumpkin/CubeSatKit/HCC-Embedded/EFFS-THIN/src  
+  
+Then, #include "thin_usr.h" in all of your files that use EFFS-THIN services,
+and #define CSK_EFFS_THIN_LIB to be N in your project, e.g. under Project 
+-> Properties -> Preprocessor Options -> Preprocessor Definitions.
+
+NOTE: The lib_effs_thin_pic24-sm-coff-N.a library is precompiled. Therefore you 
+cannot / must not make any changes to the EFFS-THIN header files in the directories
+above, or your program may not function correctly.
+
+This program demonstrates the use of EFFS-THIN on the CubeSat Kit. To use, 
+format an SD card as FAT16. Build this application and download it to your CubeSat 
+Kit Development Board. Start the application, then (hot-)plug the SD card into 
+the SD card socket. Connect via HyperTerminal to your CubeSat Kit's USB.
+You will see that the application is writing to the SD card. The card can be 
+removed from the Development Board and you can view the contents of CSK_TEMP.TXT.

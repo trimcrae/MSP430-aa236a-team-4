@@ -3,6 +3,7 @@
 #include <msp430.h>
 #include "salvo.h"
 #include "usart_uart_msg_ts.h"
+#include "timestamp_print.h"
 #if defined(__CROSSWORKS_MSP430)
 #include <__cross_studio_io.h>
 #endif
@@ -209,7 +210,7 @@ Samples are tranferred into their holding arrays via the ISR.
 ******************************************************************************/
 void TaskADC(void) 
 { 
-  usart_uart1_msg_ts(STR_TASK_ADC ": Starting.");
+  timestamp_print(STR_TASK_ADC ": Starting.");
 
   P6SEL       =               0xFF;     // We're using all  external ADC
                                         //  inputs

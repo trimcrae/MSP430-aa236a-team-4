@@ -23,18 +23,19 @@ Returns an integer corresponding to the charge status
 **                                                                           **
 ****                                                                       ****
 ******************************************************************************/
-float charge;
-int status;
-int fault;
-int ACPR;
-float voltage;
-float usb;
+
 
 int RtnStatus(void){
+  float charge;
+  int status;
+  int fault;
+  int ACPR;
+  float voltage;
+  float usb;
   charge = RtnCHRG();
   voltage = RtnBattVoltage();
-  fault = ?; //need to fix this
-  ACPR = ?; //need to fix this
+  fault = 0; //need to fix this
+  ACPR = 0; //need to fix this
   usb = Rtn5VUSB();
 
   if (-fault == 1 && -ACPR == 0){
@@ -42,7 +43,6 @@ int RtnStatus(void){
       if (charge <= 0.5){status = 1;}
       else if (charge <= 1.5) {status = 2;}
       else {status = 3;}
-      }
     } else {
       if (voltage > 4.13){status = 4;}
       else if (voltage > 3.6){status = 5;}
@@ -50,5 +50,5 @@ int RtnStatus(void){
       else {status = 7;}
     }
   } else {status = 8;}
-  return (status)
+  return (status);
 }
