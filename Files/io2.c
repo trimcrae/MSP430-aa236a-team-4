@@ -17,12 +17,10 @@ TaskIO()
 int status;
 
 void TaskIO(void) {
-  usart_uart1_msg_ts(STR_TASK_IO ": Starting.");
+  timestamp_print(STR_TASK_IO ": Starting.");
 
   while(1) {
     status = RtnStatus();
-    sprintf(strTmp, "status %d", status);
-    timestamp_print(strTmp);
     switch (status) {
     //Status 1 = charging, charge is at 0v (constant c)
     //Status 2 = charging, charge is around 2v (constant v)
@@ -32,10 +30,8 @@ void TaskIO(void) {
     //Status 6 = discharging, almost dead
     //Status 1 = discharging, is dead
       case 1:
-        //usart_uart1_msg_ts(STR_TASK_IO ": Turning LED0 ON.");
         SetLED0();
         OS_Delay(50);
-        //usart_uart1_msg_ts(STR_TASK_IO ": Turning LED0 OFF.");
         ClrLED0();
         OS_Delay(50);
         break;

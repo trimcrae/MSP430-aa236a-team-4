@@ -9,7 +9,7 @@ of files ... kind of a catch-all.
 ******************************************************************************/
 extern char strTmp[];            // Anyone can use this shared buffer
 
-#define VERSION_NUM                     "0.0.2"
+#define VERSION_NUM                     "0.9"
 
 #define TIMERA0_RELOAD                  328
 

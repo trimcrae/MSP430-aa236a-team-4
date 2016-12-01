@@ -1,9 +1,9 @@
 
 SYMBOLS BY NAME
 
-    4aac CODE       _ClrLED0            
-    4ac0 CODE       _ClrLED1            
-    4ad4 CODE       _ClrLED2            
+    4a4a CODE       _ClrLED0            
+    4a5e CODE       _ClrLED1            
+    4a72 CODE       _ClrLED2            
     4070 ISR        _ISRADC             
     4060 ISR        _ISRCMPA            
     406c ISR        _ISRNMI             
@@ -17,58 +17,58 @@ SYMBOLS BY NAME
     401c ISR        _ISRTx0             
     401e ISR        _ISRTx1             
     405c ISR        _ISRWDT             
-    48ae CODE       _Init               
+    4866 CODE       _Init               
     12f4 UDATA0     _MCU                
-    65b6 CODE       _OSClrWDTHook       
-    61f0 CODE       _OSCreateTask       
-    65ec CODE       _OSCtxSw            
-    628c CODE       _OSDelPrioQ         
-    6140 CODE       _OSDelay            
-    65a6 CODE       _OSDisableHook      
-    65c8 CODE       _OSDispatch         
-    65b0 CODE       _OSEnableHook       
-    656a CODE       _OSGetTicks         
-    65a4 CODE       _OSIdlingHook       
-    61ce CODE       _OSInit             
-    6268 CODE       _OSInitPrioTask     
-    6320 CODE       _OSInsDelayQ        
-    62d0 CODE       _OSInsPrioQ         
-    6382 CODE       _OSSched            
-    6588 CODE       _OSTimer            
-    1310 UDATA0     _OScTcbP            
-    130a UDATA0     _OSdelayQP          
-    1312 UDATA0     _OSeligQP           
-    1302 UDATA0     _OSframeP           
-    1304 UDATA0     _OSlostTicks        
-    130e UDATA0     _OSsigQinP          
-    130c UDATA0     _OSsigQoutP         
-    1314 UDATA0     _OStcbArea          
-    1306 UDATA0     _OStimerTicks       
-    462e CODE       _Rtn5VUSB           
-    4604 CODE       _RtnBattVoltage     
-    469a CODE       _RtnCHRG            
-    45e2 CODE       _RtnOnChipTemp      
-    46bc CODE       _RtnPROG            
-    4dc0 CODE       _RtnStatus          
-    4656 CODE       _RtnVCC             
-    46de CODE       _RtnVCCCurrent      
-    4678 CODE       _RtnVCCMCU          
-    4ab6 CODE       _SetLED0            
-    4aca CODE       _SetLED1            
-    4ade CODE       _SetLED2            
-    4746 CODE       _TaskADC            
-    4876 CODE       _TaskBatt           
-    4be6 CODE       _TaskDoCmds         
-    491c CODE       _TaskIO             
+    652c CODE       _OSClrWDTHook       
+    6166 CODE       _OSCreateTask       
+    6562 CODE       _OSCtxSw            
+    6202 CODE       _OSDelPrioQ         
+    60b6 CODE       _OSDelay            
+    651c CODE       _OSDisableHook      
+    653e CODE       _OSDispatch         
+    6526 CODE       _OSEnableHook       
+    64e0 CODE       _OSGetTicks         
+    651a CODE       _OSIdlingHook       
+    6144 CODE       _OSInit             
+    61de CODE       _OSInitPrioTask     
+    6296 CODE       _OSInsDelayQ        
+    6246 CODE       _OSInsPrioQ         
+    62f8 CODE       _OSSched            
+    64fe CODE       _OSTimer            
+    1314 UDATA0     _OScTcbP            
+    130e UDATA0     _OSdelayQP          
+    1316 UDATA0     _OSeligQP           
+    1306 UDATA0     _OSframeP           
+    1308 UDATA0     _OSlostTicks        
+    1312 UDATA0     _OSsigQinP          
+    1310 UDATA0     _OSsigQoutP         
+    1318 UDATA0     _OStcbArea          
+    130a UDATA0     _OStimerTicks       
+    45e6 CODE       _Rtn5VUSB           
+    45bc CODE       _RtnBattVoltage     
+    4652 CODE       _RtnCHRG            
+    459a CODE       _RtnOnChipTemp      
+    4674 CODE       _RtnPROG            
+    4d5e CODE       _RtnStatus          
+    460e CODE       _RtnVCC             
+    4696 CODE       _RtnVCCCurrent      
+    4630 CODE       _RtnVCCMCU          
+    4a54 CODE       _SetLED0            
+    4a68 CODE       _SetLED1            
+    4a7c CODE       _SetLED2            
+    46fe CODE       _TaskADC            
+    482e CODE       _TaskBatt           
+    4b84 CODE       _TaskDoCmds         
+    48d4 CODE       _TaskIO             
     4000 ISR        _Timer_A            
     12f0 UDATA0     _VCC                
     12ec UDATA0     _VCCcurrent         
     12fa UDATA0     _VUSB               
-    450d CONST      ___RAL_hex_lc       
-    44fd CONST      ___RAL_hex_uc       
-    689a CODE       ___RAL_pow10        
-    6972 CODE       ___RAL_pre_padding  
-    694c CODE       ___RAL_print_padding
+    44bd CONST      ___RAL_hex_lc       
+    44ad CONST      ___RAL_hex_uc       
+    6810 CODE       ___RAL_pow10        
+    68e8 CODE       ___RAL_pre_padding  
+    68c2 CODE       ___RAL_print_padding
     1100            ___RAM_Address      
     2800            ___RAM_Size         
     1100            ___begin_IDATA0     
@@ -80,93 +80,94 @@ SYMBOLS BY NAME
      13c            ___crt_reshi        
      13a            ___crt_reslo        
      13e            ___crt_sumext       
-    735a CODE       ___debug_io_lock    
-    735c CODE       ___debug_io_unlock  
-    7312 CODE       ___do_debug_operation
+    72d0 CODE       ___debug_io_lock    
+    72d2 CODE       ___debug_io_unlock  
+    7288 CODE       ___do_debug_operation
     1102            ___end_IDATA0       
        0            ___end_THREAD       
-    1624            ___end_UDATA0       
-    6c7a CODE       ___float32_add      
-    6e74 CODE       ___float32_div      
-    6f5a CODE       ___float32_eq       
-    6a3a CODE       ___float32_isinf    
-    6a54 CODE       ___float32_isnan    
-    6f3e CODE       ___float32_lt       
-    6d80 CODE       ___float32_mul      
-    4536 CONST      ___float32_nan      
-    6a6c CODE       ___float32_signbit  
-    6d74 CODE       ___float32_sub      
-    6bb0 CODE       ___float32_to_int64 
-    661e CODE       ___int16_div        
-    6644 CODE       ___int16_mod        
-    666a CODE       ___int16_mul        
-    667e CODE       ___int32_div        
-    685e CODE       ___int32_mod        
-    66b8 CODE       ___int64_lsl        
-    66ca CODE       ___int64_lsr        
-    6900 CODE       ___putc             
-    6766 CODE       ___uint16_div       
-    6f6a CODE       ___uint16_to_float32
-    677e CODE       ___uint32_div       
-    678c CODE       ___uint32_divmod    
-    67b4 CODE       ___uint32_mod       
-    6846 CODE       ___uint32_mul_16x16 
-    67c6 CODE       ___uint64_div       
-    680a CODE       ___uint64_divmod    
-    672a CODE       ___uint64_mod       
-    6a7c CODE       ___uint64_to_float32
-    161e UDATA0     ___user_format_extender
-    510a CODE       ___vfprintf         
-    510a CODE       ___vfprintf_float_long
-    69a4 CODE       _abs                
+    1628            ___end_UDATA0       
+    6bf0 CODE       ___float32_add      
+    6dea CODE       ___float32_div      
+    6ed0 CODE       ___float32_eq       
+    69b0 CODE       ___float32_isinf    
+    69ca CODE       ___float32_isnan    
+    6eb4 CODE       ___float32_lt       
+    6cf6 CODE       ___float32_mul      
+    44e6 CONST      ___float32_nan      
+    69e2 CODE       ___float32_signbit  
+    6cea CODE       ___float32_sub      
+    6b26 CODE       ___float32_to_int64 
+    6594 CODE       ___int16_div        
+    65ba CODE       ___int16_mod        
+    65e0 CODE       ___int16_mul        
+    65f4 CODE       ___int32_div        
+    67d4 CODE       ___int32_mod        
+    662e CODE       ___int64_lsl        
+    6640 CODE       ___int64_lsr        
+    6876 CODE       ___putc             
+    66dc CODE       ___uint16_div       
+    6ee0 CODE       ___uint16_to_float32
+    66f4 CODE       ___uint32_div       
+    6702 CODE       ___uint32_divmod    
+    672a CODE       ___uint32_mod       
+    67bc CODE       ___uint32_mul_16x16 
+    673c CODE       ___uint64_div       
+    6780 CODE       ___uint64_divmod    
+    66a0 CODE       ___uint64_mod       
+    69f2 CODE       ___uint64_to_float32
+    1622 UDATA0     ___user_format_extender
+    5080 CODE       ___vfprintf         
+    5080 CODE       ___vfprintf_float_long
+    691a CODE       _abs                
     12de UDATA0     _acpr               
     12e8 UDATA0     _batt               
     12f8 UDATA0     _chargeTime         
-    4f02 CODE       _check_acpr         
-    4eb4 CODE       _check_fault        
+    4eb2 CODE       _checkChargeTime    
+    4e7a CODE       _check_acpr         
+    4e56 CODE       _check_fault        
     12e0 UDATA0     _chrg               
     1300 UDATA0     _command            
-    1622 UDATA0     _dbgCntrlWord       
-    1620 UDATA0     _dbgCommWord        
-    7348 CODE       _debug_exit         
-    72ac CODE       _fabsf              
+    1626 UDATA0     _dbgCntrlWord       
+    1624 UDATA0     _dbgCommWord        
+    72be CODE       _debug_exit         
+    7222 CODE       _fabsf              
     12dc UDATA0     _fault              
-    703e CODE       _floor              
-    703e CODE       _floorf             
-    7126 CODE       _fmod               
-    7126 CODE       _fmodf              
-    72ee CODE       _frexp              
-    72b2 CODE       _ldexp              
-    453a CODE       _main               
-    6a0a CODE       _memcpy             
-    6a1a CODE       _memset             
-    6f94 CODE       _modff              
+    6fb4 CODE       _floor              
+    6fb4 CODE       _floorf             
+    709c CODE       _fmod               
+    709c CODE       _fmodf              
+    7264 CODE       _frexp              
+    7228 CODE       _ldexp              
+    44ea CODE       _main               
+    6980 CODE       _memcpy             
+    6990 CODE       _memset             
+    6f0a CODE       _modff              
     12e4 UDATA0     _prog               
-    1516 UDATA0     _rx1Buff            
-    161a UDATA0     _rx1Count           
-    1618 UDATA0     _rx1InP             
-    1616 UDATA0     _rx1OutP            
-    4d98 CODE       _setChargerOn       
-    4daa CODE       _setProgOn          
-    69b4 CODE       _sprintf            
+    151a UDATA0     _rx1Buff            
+    161e UDATA0     _rx1Count           
+    161c UDATA0     _rx1InP             
+    161a UDATA0     _rx1OutP            
+    4d38 CODE       _setChargerOn       
+    4d42 CODE       _setProgOn          
+    4d50 CODE       _setVCCCurrentChipOn
+    692a CODE       _sprintf            
     12da UDATA0     _status             
     1102 UDATA0     _strTmp             
-    6a2a CODE       _strlen             
-    69f0 CODE       _strnlen            
+    69a0 CODE       _strlen             
+    6966 CODE       _strnlen            
     12fe UDATA0     _temp               
-    4ae8 CODE       _timestamp_print    
-    1380 UDATA0     _tx1Buff            
-    1514 UDATA0     _tx1Count           
-    1512 UDATA0     _tx1InP             
-    1510 UDATA0     _tx1OutP            
-    5030 CODE       _usart_uart1_getchar
-    50e4 CODE       _usart_uart1_inchar 
-    4f3a CODE       _usart_uart1_msg_ts 
-    4f98 CODE       _usart_uart1_open   
-    50b8 CODE       _usart_uart1_outchar
-    5064 CODE       _usart_uart1_putchar
-    5096 CODE       _usart_uart1_puts   
-    5026 CODE       _usart_uart1_tx_free
+    4a86 CODE       _timestamp_print    
+    1384 UDATA0     _tx1Buff            
+    1518 UDATA0     _tx1Count           
+    1516 UDATA0     _tx1InP             
+    1514 UDATA0     _tx1OutP            
+    4fa6 CODE       _usart_uart1_getchar
+    505a CODE       _usart_uart1_inchar 
+    4f0e CODE       _usart_uart1_open   
+    502e CODE       _usart_uart1_outchar
+    4fda CODE       _usart_uart1_putchar
+    500c CODE       _usart_uart1_puts   
+    4f9c CODE       _usart_uart1_tx_free
 
 
 SYMBOLS BY VALUE
@@ -179,10 +180,10 @@ SYMBOLS BY VALUE
      13a            ___crt_reslo        
      13c            ___crt_reshi        
      13e            ___crt_sumext       
-    1100            ___RAM_Address      
     1100            ___begin_IDATA0     
-    1102            ___begin_UDATA0     
+    1100            ___RAM_Address      
     1102 UDATA0     _strTmp             
+    1102            ___begin_UDATA0     
     1102            ___end_IDATA0       
     12da UDATA0     _status             
     12dc UDATA0     _fault              
@@ -197,27 +198,27 @@ SYMBOLS BY VALUE
     12fa UDATA0     _VUSB               
     12fe UDATA0     _temp               
     1300 UDATA0     _command            
-    1302 UDATA0     _OSframeP           
-    1304 UDATA0     _OSlostTicks        
-    1306 UDATA0     _OStimerTicks       
-    130a UDATA0     _OSdelayQP          
-    130c UDATA0     _OSsigQoutP         
-    130e UDATA0     _OSsigQinP          
-    1310 UDATA0     _OScTcbP            
-    1312 UDATA0     _OSeligQP           
-    1314 UDATA0     _OStcbArea          
-    1380 UDATA0     _tx1Buff            
-    1510 UDATA0     _tx1OutP            
-    1512 UDATA0     _tx1InP             
-    1514 UDATA0     _tx1Count           
-    1516 UDATA0     _rx1Buff            
-    1616 UDATA0     _rx1OutP            
-    1618 UDATA0     _rx1InP             
-    161a UDATA0     _rx1Count           
-    161e UDATA0     ___user_format_extender
-    1620 UDATA0     _dbgCommWord        
-    1622 UDATA0     _dbgCntrlWord       
-    1624            ___end_UDATA0       
+    1306 UDATA0     _OSframeP           
+    1308 UDATA0     _OSlostTicks        
+    130a UDATA0     _OStimerTicks       
+    130e UDATA0     _OSdelayQP          
+    1310 UDATA0     _OSsigQoutP         
+    1312 UDATA0     _OSsigQinP          
+    1314 UDATA0     _OScTcbP            
+    1316 UDATA0     _OSeligQP           
+    1318 UDATA0     _OStcbArea          
+    1384 UDATA0     _tx1Buff            
+    1514 UDATA0     _tx1OutP            
+    1516 UDATA0     _tx1InP             
+    1518 UDATA0     _tx1Count           
+    151a UDATA0     _rx1Buff            
+    161a UDATA0     _rx1OutP            
+    161c UDATA0     _rx1InP             
+    161e UDATA0     _rx1Count           
+    1622 UDATA0     ___user_format_extender
+    1624 UDATA0     _dbgCommWord        
+    1626 UDATA0     _dbgCntrlWord       
+    1628            ___end_UDATA0       
     2800            ___RAM_Size         
     4000 ISR        _Timer_A            
     401c ISR        _ISRTx0             
@@ -233,107 +234,108 @@ SYMBOLS BY VALUE
     4068 ISR        _ISRTimerB0         
     406c ISR        _ISRNMI             
     4070 ISR        _ISRADC             
-    44fd CONST      ___RAL_hex_uc       
-    450d CONST      ___RAL_hex_lc       
-    4536 CONST      ___float32_nan      
-    453a CODE       _main               
-    45e2 CODE       _RtnOnChipTemp      
-    4604 CODE       _RtnBattVoltage     
-    462e CODE       _Rtn5VUSB           
-    4656 CODE       _RtnVCC             
-    4678 CODE       _RtnVCCMCU          
-    469a CODE       _RtnCHRG            
-    46bc CODE       _RtnPROG            
-    46de CODE       _RtnVCCCurrent      
-    4746 CODE       _TaskADC            
-    4876 CODE       _TaskBatt           
-    48ae CODE       _Init               
-    491c CODE       _TaskIO             
-    4aac CODE       _ClrLED0            
-    4ab6 CODE       _SetLED0            
-    4ac0 CODE       _ClrLED1            
-    4aca CODE       _SetLED1            
-    4ad4 CODE       _ClrLED2            
-    4ade CODE       _SetLED2            
-    4ae8 CODE       _timestamp_print    
-    4be6 CODE       _TaskDoCmds         
-    4d98 CODE       _setChargerOn       
-    4daa CODE       _setProgOn          
-    4dc0 CODE       _RtnStatus          
-    4eb4 CODE       _check_fault        
-    4f02 CODE       _check_acpr         
-    4f3a CODE       _usart_uart1_msg_ts 
-    4f98 CODE       _usart_uart1_open   
-    5026 CODE       _usart_uart1_tx_free
-    5030 CODE       _usart_uart1_getchar
-    5064 CODE       _usart_uart1_putchar
-    5096 CODE       _usart_uart1_puts   
-    50b8 CODE       _usart_uart1_outchar
-    50e4 CODE       _usart_uart1_inchar 
-    510a CODE       ___vfprintf_float_long
-    510a CODE       ___vfprintf         
-    6140 CODE       _OSDelay            
-    61ce CODE       _OSInit             
-    61f0 CODE       _OSCreateTask       
-    6268 CODE       _OSInitPrioTask     
-    628c CODE       _OSDelPrioQ         
-    62d0 CODE       _OSInsPrioQ         
-    6320 CODE       _OSInsDelayQ        
-    6382 CODE       _OSSched            
-    656a CODE       _OSGetTicks         
-    6588 CODE       _OSTimer            
-    65a4 CODE       _OSIdlingHook       
-    65a6 CODE       _OSDisableHook      
-    65b0 CODE       _OSEnableHook       
-    65b6 CODE       _OSClrWDTHook       
-    65c8 CODE       _OSDispatch         
-    65ec CODE       _OSCtxSw            
-    661e CODE       ___int16_div        
-    6644 CODE       ___int16_mod        
-    666a CODE       ___int16_mul        
-    667e CODE       ___int32_div        
-    66b8 CODE       ___int64_lsl        
-    66ca CODE       ___int64_lsr        
-    672a CODE       ___uint64_mod       
-    6766 CODE       ___uint16_div       
-    677e CODE       ___uint32_div       
-    678c CODE       ___uint32_divmod    
-    67b4 CODE       ___uint32_mod       
-    67c6 CODE       ___uint64_div       
-    680a CODE       ___uint64_divmod    
-    6846 CODE       ___uint32_mul_16x16 
-    685e CODE       ___int32_mod        
-    689a CODE       ___RAL_pow10        
-    6900 CODE       ___putc             
-    694c CODE       ___RAL_print_padding
-    6972 CODE       ___RAL_pre_padding  
-    69a4 CODE       _abs                
-    69b4 CODE       _sprintf            
-    69f0 CODE       _strnlen            
-    6a0a CODE       _memcpy             
-    6a1a CODE       _memset             
-    6a2a CODE       _strlen             
-    6a3a CODE       ___float32_isinf    
-    6a54 CODE       ___float32_isnan    
-    6a6c CODE       ___float32_signbit  
-    6a7c CODE       ___uint64_to_float32
-    6bb0 CODE       ___float32_to_int64 
-    6c7a CODE       ___float32_add      
-    6d74 CODE       ___float32_sub      
-    6d80 CODE       ___float32_mul      
-    6e74 CODE       ___float32_div      
-    6f3e CODE       ___float32_lt       
-    6f5a CODE       ___float32_eq       
-    6f6a CODE       ___uint16_to_float32
-    6f94 CODE       _modff              
-    703e CODE       _floor              
-    703e CODE       _floorf             
-    7126 CODE       _fmod               
-    7126 CODE       _fmodf              
-    72ac CODE       _fabsf              
-    72b2 CODE       _ldexp              
-    72ee CODE       _frexp              
-    7312 CODE       ___do_debug_operation
-    7348 CODE       _debug_exit         
-    735a CODE       ___debug_io_lock    
-    735c CODE       ___debug_io_unlock  
+    44ad CONST      ___RAL_hex_uc       
+    44bd CONST      ___RAL_hex_lc       
+    44e6 CONST      ___float32_nan      
+    44ea CODE       _main               
+    459a CODE       _RtnOnChipTemp      
+    45bc CODE       _RtnBattVoltage     
+    45e6 CODE       _Rtn5VUSB           
+    460e CODE       _RtnVCC             
+    4630 CODE       _RtnVCCMCU          
+    4652 CODE       _RtnCHRG            
+    4674 CODE       _RtnPROG            
+    4696 CODE       _RtnVCCCurrent      
+    46fe CODE       _TaskADC            
+    482e CODE       _TaskBatt           
+    4866 CODE       _Init               
+    48d4 CODE       _TaskIO             
+    4a4a CODE       _ClrLED0            
+    4a54 CODE       _SetLED0            
+    4a5e CODE       _ClrLED1            
+    4a68 CODE       _SetLED1            
+    4a72 CODE       _ClrLED2            
+    4a7c CODE       _SetLED2            
+    4a86 CODE       _timestamp_print    
+    4b84 CODE       _TaskDoCmds         
+    4d38 CODE       _setChargerOn       
+    4d42 CODE       _setProgOn          
+    4d50 CODE       _setVCCCurrentChipOn
+    4d5e CODE       _RtnStatus          
+    4e56 CODE       _check_fault        
+    4e7a CODE       _check_acpr         
+    4eb2 CODE       _checkChargeTime    
+    4f0e CODE       _usart_uart1_open   
+    4f9c CODE       _usart_uart1_tx_free
+    4fa6 CODE       _usart_uart1_getchar
+    4fda CODE       _usart_uart1_putchar
+    500c CODE       _usart_uart1_puts   
+    502e CODE       _usart_uart1_outchar
+    505a CODE       _usart_uart1_inchar 
+    5080 CODE       ___vfprintf         
+    5080 CODE       ___vfprintf_float_long
+    60b6 CODE       _OSDelay            
+    6144 CODE       _OSInit             
+    6166 CODE       _OSCreateTask       
+    61de CODE       _OSInitPrioTask     
+    6202 CODE       _OSDelPrioQ         
+    6246 CODE       _OSInsPrioQ         
+    6296 CODE       _OSInsDelayQ        
+    62f8 CODE       _OSSched            
+    64e0 CODE       _OSGetTicks         
+    64fe CODE       _OSTimer            
+    651a CODE       _OSIdlingHook       
+    651c CODE       _OSDisableHook      
+    6526 CODE       _OSEnableHook       
+    652c CODE       _OSClrWDTHook       
+    653e CODE       _OSDispatch         
+    6562 CODE       _OSCtxSw            
+    6594 CODE       ___int16_div        
+    65ba CODE       ___int16_mod        
+    65e0 CODE       ___int16_mul        
+    65f4 CODE       ___int32_div        
+    662e CODE       ___int64_lsl        
+    6640 CODE       ___int64_lsr        
+    66a0 CODE       ___uint64_mod       
+    66dc CODE       ___uint16_div       
+    66f4 CODE       ___uint32_div       
+    6702 CODE       ___uint32_divmod    
+    672a CODE       ___uint32_mod       
+    673c CODE       ___uint64_div       
+    6780 CODE       ___uint64_divmod    
+    67bc CODE       ___uint32_mul_16x16 
+    67d4 CODE       ___int32_mod        
+    6810 CODE       ___RAL_pow10        
+    6876 CODE       ___putc             
+    68c2 CODE       ___RAL_print_padding
+    68e8 CODE       ___RAL_pre_padding  
+    691a CODE       _abs                
+    692a CODE       _sprintf            
+    6966 CODE       _strnlen            
+    6980 CODE       _memcpy             
+    6990 CODE       _memset             
+    69a0 CODE       _strlen             
+    69b0 CODE       ___float32_isinf    
+    69ca CODE       ___float32_isnan    
+    69e2 CODE       ___float32_signbit  
+    69f2 CODE       ___uint64_to_float32
+    6b26 CODE       ___float32_to_int64 
+    6bf0 CODE       ___float32_add      
+    6cea CODE       ___float32_sub      
+    6cf6 CODE       ___float32_mul      
+    6dea CODE       ___float32_div      
+    6eb4 CODE       ___float32_lt       
+    6ed0 CODE       ___float32_eq       
+    6ee0 CODE       ___uint16_to_float32
+    6f0a CODE       _modff              
+    6fb4 CODE       _floorf             
+    6fb4 CODE       _floor              
+    709c CODE       _fmod               
+    709c CODE       _fmodf              
+    7222 CODE       _fabsf              
+    7228 CODE       _ldexp              
+    7264 CODE       _frexp              
+    7288 CODE       ___do_debug_operation
+    72be CODE       _debug_exit         
+    72d0 CODE       ___debug_io_lock    
+    72d2 CODE       ___debug_io_unlock  

@@ -44,6 +44,7 @@ int RtnStatus(void){
   
   acpr = check_acpr();
   fault = check_fault();
+  checkChargeTime();
 
   usb = Rtn5VUSB();
 
@@ -55,11 +56,6 @@ int RtnStatus(void){
   //Status 6 = discharging, almost dead
   //Status 1 = discharging, is dead
   //ONLY USED FOR TESTING - delete the fault = 0 line!!!
-  //acpr = 1;
-  //fault = -1;
-  //acpr = -1;
-  //sprintf(strTmp, "\n acpr: %d", acpr);
-  //debug_printf(strTmp, "\n acpr: %d", acpr);
   if (fault == -1){
     if(acpr == 0){
       if (charge <= 0.5){status = 1;}
@@ -78,10 +74,8 @@ int RtnStatus(void){
 int check_fault(void){
   int fault;
   P2DIR &= ~BIT7;
-  fault = P2IN && BIT7;
+  fault = P2IN & BIT7;
   fault >> 7;
-  sprintf(strTmp, "p2in %d    fault bit %d  fault %d", P2IN, BIT7, fault);
-  timestamp_print(strTmp);
   if(fault != 0){
      fault = -1;
   }
@@ -97,16 +91,23 @@ int check_acpr(void){
   //Gets the input bit
   acpr_step1 = P2IN & BIT6;
   acpr = acpr_step1 >> 6;
-  //Shifts so that it is 0 or 1
-  //acpr >> 6;
-  //Prints the result
-  //sprintf(strTmp, "p2in %d   bit6 %d acpr bit %d  acpr %d", P2IN, BIT6, acpr_step1, acpr);
-  //debug_printf(strTmp);
-  //timestamp_print(strTmp);
-  //If acpr is 0, then it is plugged in
-  //If acpr is 1, then return a -1
   if (acpr != 0){
     acpr = -1;
   }
   return acpr;
+}
+
+static long charge_start;
+int checkChargeTime(void){
+    int charge_time;
+    int acpr;
+    long current_ticks;
+    acpr = check_acpr();
+    current_ticks = OSGetTicks();
+    if (acpr != 0 || current_ticks < 100){
+       charge_start = current_ticks;
+    }
+    
+    charge_time = (current_ticks - charge_start) / 100;
+    return charge_time;
 }

@@ -47,7 +47,7 @@ void TaskDoCmds(void){
 
       case 'i'  :
         VUSB = Rtn5VUSB();
-        chargeTime = 10; //This needs to be fixed
+        chargeTime = checkChargeTime();
         MCU = RtnVCCMCU();
         VCC = RtnVCC();
         VCCcurrent = RtnVCCCurrent();
@@ -93,13 +93,19 @@ void TaskDoCmds(void){
 }
 
 void setChargerOn(void){
-  timestamp_print("charger on");
+  //timestamp_print("charger on");
   P2DIR |= BIT3;
   P2OUT |= BIT3;
 }
 
 void setProgOn(void){
-  timestamp_print("Prog on");
+  //timestamp_print("Prog on");
   P2DIR |=  BIT4;
   P2OUT |=  BIT4;
+}
+
+void setVCCCurrentChipOn(void){
+  //timestamp_print("VCCCurrent Chip on");
+  P2DIR |=  BIT5;
+  P2OUT &=  ~BIT5;
 }
