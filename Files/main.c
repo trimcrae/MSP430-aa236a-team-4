@@ -56,6 +56,7 @@ void main(void) {
 //  debug_printf("main: This is debug output in the CrossWorks IDE Debug I/O Terminal.\n");
 
   // Run the scheduler open-loop for best performance.
+  setChargerOn();
   while(1) {
     OSSched();
   }

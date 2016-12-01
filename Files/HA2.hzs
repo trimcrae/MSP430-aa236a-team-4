@@ -21,33 +21,35 @@
   <FrameBufferWindow addressText="" bufferWidth="-1" bufferHeight="-1" addressSpace="" />
  </FrameBufferWindow>
  <Memory1>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="HA2" addressSpace="" />
  </Memory1>
  <Memory2>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="HA2" addressSpace="" />
  </Memory2>
  <Memory3>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="HA2" addressSpace="" />
  </Memory3>
  <Memory4>
-  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="" addressSpace="" />
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="HA2" addressSpace="" />
  </Memory4>
  <Project>
   <ProjectSessionItem path="HA2" name="unnamed" />
   <ProjectSessionItem path="HA2;HA2" name="unnamed" />
+  <ProjectSessionItem path="HA2;HA2;Pumpkin Files" name="unnamed" />
+  <ProjectSessionItem path="HA2;HA2;Pumpkin Files;Library Files" name="unnamed" />
   <ProjectSessionItem path="HA2;HA2;Source Files" name="unnamed" />
  </Project>
  <Register1>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="HA2" />
  </Register1>
  <Register2>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="HA2" />
  </Register2>
  <Register3>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="HA2" />
  </Register3>
  <Register4>
-  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="" />
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" decimalNodes="" octalNodes="" asciiNodes="" visibleNodes="" name="HA2" />
  </Register4>
  <TargetWindow programAction="" uploadFileType="" programLoadAddress="" programSize="" uploadFileName="" uploadMemoryInterface="" programFileName="" uploadStartAddress="" programFileType="" uploadSize="" programMemoryInterface="" />
  <TraceWindow>
@@ -69,10 +71,19 @@
   <Watches active="0" update="Never" />
  </Watch4>
  <Files>
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/main.c" y="45" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/main.c" left="0" selected="1" name="unnamed" top="35" />
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/users/may/documents/github/msp430-aa236a-team-4/files/timestamp_print.c" y="45" path="C:/users/may/documents/github/msp430-aa236a-team-4/files/timestamp_print.c" left="0" selected="0" name="unnamed" top="24" />
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/users/may/documents/github/msp430-aa236a-team-4/files/ui.c" y="68" path="C:/users/may/documents/github/msp430-aa236a-team-4/files/ui.c" left="0" selected="0" name="unnamed" top="61" />
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Pumpkin/Salvo/Inc/salvolib.h" y="15" path="C:/Pumpkin/Salvo/Inc/salvolib.h" left="0" selected="0" name="unnamed" top="2" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/main.c" y="34" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/main.c" left="0" selected="0" name="unnamed" top="22" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/users/may/documents/github/msp430-aa236a-team-4/files/timestamp_print.c" y="41" path="C:/users/may/documents/github/msp430-aa236a-team-4/files/timestamp_print.c" left="0" selected="0" name="unnamed" top="21" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="32" debugPath="C:/users/may/documents/github/msp430-aa236a-team-4/files/ui.c" y="70" path="C:/users/may/documents/github/msp430-aa236a-team-4/files/ui.c" left="0" selected="0" name="unnamed" top="53" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/ui.h" y="12" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/ui.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/users/may/documents/github/msp430-aa236a-team-4/files/telem.c" y="5" path="C:/users/may/documents/github/msp430-aa236a-team-4/files/telem.c" left="0" selected="1" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/telem.h" y="0" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/telem.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/timestamp_print.h" y="0" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/timestamp_print.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/io2.c" y="36" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/io2.c" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="c:/users/may/documents/github/msp430-aa236a-team-4/files/adc.c" y="189" path="C:/users/may/documents/github/msp430-aa236a-team-4/files/adc.c" left="0" selected="0" name="unnamed" top="173" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/io2.h" y="8" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/io2.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/adc.h" y="3" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/adc.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="0" debugPath="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/main.h" y="11" path="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files/main.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Default" x="35" debugPath="C:/Users/may/AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f1611.h" y="40" path="C:/Users/may/AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f1611.h" left="0" selected="0" name="unnamed" top="28" />
  </Files>
- <MSP430CrossStudioWindow activeProject="HA2" autoConnectTarget="TI MSP-FET430UIF (JTAG)" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files" fileDialogDefaultFilter="" autoConnectCapabilities="3455" debugSearchPath="" buildConfiguration="Debug" />
+ <MSP430CrossStudioWindow activeProject="HA2" autoConnectTarget="CrossConnect" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/may/Documents/GitHub/MSP430-aa236a-team-4/Files" fileDialogDefaultFilter="*.c" autoConnectCapabilities="527743" debugSearchPath="" buildConfiguration="Debug" />
 </session>

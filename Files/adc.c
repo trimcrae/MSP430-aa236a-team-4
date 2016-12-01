@@ -182,9 +182,12 @@ difference = 27mA reported.
 **                                                                           **
 ****                                                                       ****
 ******************************************************************************/
-#if 0
+#if 1
 float RtnVCCCurrent(void) {
-  if (Rtn_3p3V_enabled()) {
+  if (1) {
+    //Prints out the raw values that are then filtered
+    sprintf(strTmp, "before filter vcc current value 1: %.2f  value 2: %.2f", v_u16_vcc_mcu, v_u16_vcc);
+    timestamp_print(strTmp);
     return (((v_u16_vcc_mcu * SCALE_VCC_MCU * REF_VCC_MCU)-(v_u16_vcc * SCALE_VCC * REF_VCC))*(1000/(0.09*4095)));
   }
   else {

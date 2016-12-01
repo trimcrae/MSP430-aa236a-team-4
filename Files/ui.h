@@ -10,6 +10,7 @@ Functions available to all who include ui.h
 #define __ui_h
 
 extern void TaskDoCmds(void);
+extern void setChargerOn(void);
 
 #define STR_TASK_DOCMDS   "TaskDoCmds"
 
