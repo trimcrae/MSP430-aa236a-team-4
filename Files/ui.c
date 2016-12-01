@@ -65,11 +65,14 @@ void TaskDoCmds(void){
         P2DIR &= ~BIT6;
         P2DIR &= ~BIT7;
 
-        acpr = 0; //Is always 0
+        acpr = 1; //need to fix this
+        if((P2IN && BIT6) != 0){
+          acpr = 0;
+        }
         fault = 1; //If the fault bit is high then there is no fault and this will end up 0
 
         if((P2IN && BIT7) != 0){
-            fault = 0;
+            fault = -1;
         }
         
         sprintf(strTmp, STR_TASK_DOCMDS ": System Info: +5V_USB: %.2f \t charge time: %d s \n MCU: %.2f \t VCC: %.2f \t VCC current: %.2f mA \t temp: %d C \n Batt: %.2f V \t PROG: %.2f V \t CHRG: %.2f V \t -ACPR: %d \t -FAULT: %d", VUSB, chargeTime, MCU, VCC, VCCcurrent, temp, batt, prog, chrg, acpr, fault);

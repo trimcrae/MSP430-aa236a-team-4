@@ -4,12 +4,10 @@
 #include "batt.h"                 // Req'd because we reference TaskBatt()
 #include "init.h"                 // Req'd because we call Init()
 #include "io2.h"                   // Req'd because we reference TaskIO()
-#include "ui.h"
-#include "telem.h"
 #include "main.h"                 // Application header
 #include "salvo.h"                // Req'd because we call e.g. OSInit() 
 #include "usart_uart.h"           // Req'd because we call usart_uart1_puts()
-#include "timestamp_print.h"
+#include "usart_uart_msg_ts.h"    // Req'd because we call usart_uart1_msg_ts()
 
 
 /******************************************************************************
@@ -36,8 +34,8 @@ void main(void) {
 
   // Now that the non-RTOS stuff has been initialized, we can output via USB.
   usart_uart1_puts("\r\n");
-  timestamp_print("main: SSDL Team 4 AA236A 1617 Homework Assignment #2");
-  timestamp_print("  v" VERSION_NUM " built on "__DATE__" at "__TIME__"."); // note indent of two spaces
+  usart_uart1_msg_ts("main: SSDL Team XXX AA236A 1617 Homework Assignment #2");
+  usart_uart1_msg_ts("  v" VERSION_NUM " built on "__DATE__" at "__TIME__"."); // note indent of two spaces
 
   // Initialize the RTOS.
   OSInit();
@@ -45,8 +43,7 @@ void main(void) {
   // Create the various tasks.
   OSCreateTask(TaskADC,        OSTCBP(1),  3);
   OSCreateTask(TaskBatt,       OSTCBP(2),  4);
-  OSCreateTask(TaskIO,         OSTCBP(3),  5);
-  OSCreateTask(TaskDoCmds,     OSTCBP(4),  6);
+  OSCreateTask(TaskIO,         OSTCBP(3),  11);
 
   // Since ISRs are present, we must enable interrupts globally. No need to touch interrupts again.
   __enable_interrupt();
@@ -56,7 +53,6 @@ void main(void) {
 //  debug_printf("main: This is debug output in the CrossWorks IDE Debug I/O Terminal.\n");
 
   // Run the scheduler open-loop for best performance.
-  setChargerOn();
   while(1) {
     OSSched();
   }
