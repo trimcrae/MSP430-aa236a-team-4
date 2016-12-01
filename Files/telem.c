@@ -34,32 +34,16 @@ int RtnStatus(void){
   float charge;
   int status;
   int fault;
-  int ACPR;
+  int acpr;
   float voltage;
   int test_fault;
   int test_acpr;
   float usb;
   charge = RtnCHRG();
   voltage = RtnBattVoltage();
-  fault = 1; //If the fault bit is high then there is no fault and this will end up -1
   
-  
-  test_fault = P2IN && BIT7;
-  test_fault = P2IN && BIT7;
-  sprintf(strTmp, "p2in %d    bit7 %d  test %d", P2IN, BIT7, test_fault);
-  timestamp_print(strTmp);
-  if(test_fault != 0){
-     fault = -1;
-  }
-  ACPR = -1; //need to fix this
-  //ACPR bit is high if the board is plugged in
-  //This will result in the ACPR value being 0 if the bit is high
-  //Otherwise the ACPR value will be -1
-  test_acpr = P2IN && BIT6;
-  if(test_acpr != 0){
-     ACPR = 0;
-  }
-
+  acpr = check_acpr();
+  fault = check_fault();
 
   usb = Rtn5VUSB();
 
@@ -71,9 +55,13 @@ int RtnStatus(void){
   //Status 6 = discharging, almost dead
   //Status 1 = discharging, is dead
   //ONLY USED FOR TESTING - delete the fault = 0 line!!!
-  fault = -1;
+  //acpr = 1;
+  //fault = -1;
+  //acpr = -1;
+  //sprintf(strTmp, "\n acpr: %d", acpr);
+  //debug_printf(strTmp, "\n acpr: %d", acpr);
   if (fault == -1){
-    if(ACPR == 0){
+    if(acpr == 0){
       if (charge <= 0.5){status = 1;}
       else if (charge <= 1.5) {status = 2;}
       else {status = 3;}
@@ -85,4 +73,40 @@ int RtnStatus(void){
     }
   } else {status = 8;}
   return (status);
+}
+
+int check_fault(void){
+  int fault;
+  P2DIR &= ~BIT7;
+  fault = P2IN && BIT7;
+  fault >> 7;
+  sprintf(strTmp, "p2in %d    fault bit %d  fault %d", P2IN, BIT7, fault);
+  timestamp_print(strTmp);
+  if(fault != 0){
+     fault = -1;
+  }
+  return fault;
+}
+
+//Checks the acpr (whether the board is plugged in or not
+int check_acpr(void){
+  int acpr;
+  int acpr_step1;
+  //Sets the proper bit as an input
+  P2DIR &= ~BIT6;
+  //Gets the input bit
+  acpr_step1 = P2IN & BIT6;
+  acpr = acpr_step1 >> 6;
+  //Shifts so that it is 0 or 1
+  //acpr >> 6;
+  //Prints the result
+  //sprintf(strTmp, "p2in %d   bit6 %d acpr bit %d  acpr %d", P2IN, BIT6, acpr_step1, acpr);
+  //debug_printf(strTmp);
+  //timestamp_print(strTmp);
+  //If acpr is 0, then it is plugged in
+  //If acpr is 1, then return a -1
+  if (acpr != 0){
+    acpr = -1;
+  }
+  return acpr;
 }

@@ -36,7 +36,6 @@ void TaskDoCmds(void){
   timestamp_print(STR_TASK_DOCMDS ": Starting.");
 
   while(1){
-    OS_Delay(20);
     command = usart_uart1_getchar();
 
     switch(command) {
@@ -62,18 +61,8 @@ void TaskDoCmds(void){
         prog = RtnPROG();
         chrg = RtnCHRG();
 
-        P2DIR &= ~BIT6;
-        P2DIR &= ~BIT7;
-
-        acpr = 1; //need to fix this
-        if((P2IN && BIT6) != 0){
-          acpr = 0;
-        }
-        fault = 1; //If the fault bit is high then there is no fault and this will end up 0
-
-        if((P2IN && BIT7) != 0){
-            fault = -1;
-        }
+        acpr = check_acpr();
+        fault = check_fault();
         
         sprintf(strTmp, STR_TASK_DOCMDS ": System Info: +5V_USB: %.2f \t charge time: %d s \n MCU: %.2f \t VCC: %.2f \t VCC current: %.2f mA \t temp: %d C \n Batt: %.2f V \t PROG: %.2f V \t CHRG: %.2f V \t -ACPR: %d \t -FAULT: %d", VUSB, chargeTime, MCU, VCC, VCCcurrent, temp, batt, prog, chrg, acpr, fault);
         timestamp_print(strTmp);
@@ -99,17 +88,18 @@ void TaskDoCmds(void){
       break;
 	
    }
+   OS_Delay(20);
  }
 }
 
 void setChargerOn(void){
-  timestamp_print("charger off");
+  timestamp_print("charger on");
   P2DIR |= BIT3;
   P2OUT |= BIT3;
 }
 
-void setChargerOff(void){
-  timestamp_print("charger on");
-  P2DIR |=  BIT3;
-  P2OUT &= ~BIT3;
+void setProgOn(void){
+  timestamp_print("Prog on");
+  P2DIR |=  BIT4;
+  P2OUT |=  BIT4;
 }

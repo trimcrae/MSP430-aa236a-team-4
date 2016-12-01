@@ -8,6 +8,7 @@
 #include "salvo.h"                // Req'd because we call e.g. OSInit() 
 #include "usart_uart.h"           // Req'd because we call usart_uart1_puts()
 #include "usart_uart_msg_ts.h"    // Req'd because we call usart_uart1_msg_ts()
+#include "ui.h"
 
 
 /******************************************************************************
@@ -44,9 +45,12 @@ void main(void) {
   OSCreateTask(TaskADC,        OSTCBP(1),  3);
   OSCreateTask(TaskBatt,       OSTCBP(2),  4);
   OSCreateTask(TaskIO,         OSTCBP(3),  11);
+  OSCreateTask(TaskDoCmds,     OSTCBP(4),  12);
 
   // Since ISRs are present, we must enable interrupts globally. No need to touch interrupts again.
   __enable_interrupt();
+  setChargerOn();
+  setProgOn();
 
   // OK to use, but keep in mind that it has weird run-time effects and requires that the FET
   //  be present

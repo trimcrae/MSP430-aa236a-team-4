@@ -64,20 +64,20 @@ void TaskIO(void) {
         SetLED0();
         SetLED1();
         SetLED2();
-        OS_Delay(15);
+        OS_Delay(20);
         ClrLED0();
         ClrLED1();
         ClrLED2();
-        OS_Delay(85);
+        OS_Delay(80);
         break;  
    
        case 5:
         SetLED0();
         SetLED1();
-        OS_Delay(15);
+        OS_Delay(20);
         ClrLED0();
         ClrLED1();
-        OS_Delay(85);
+        OS_Delay(80);
         break;  
 
        case 6:
@@ -88,17 +88,15 @@ void TaskIO(void) {
         break;  
 
        case 7:
-        ClrLED0();
-        ClrLED1();
+        SetLED1();
+        OS_Delay(50);
         ClrLED2();
-        OS_Delay(100);
         break;
 
        case 8:
-        ClrLED0();
-        ClrLED1();
+        SetLED2();
+        OS_Delay(50);
         ClrLED2();
-        OS_Delay(100);
         break;
     }
   }
