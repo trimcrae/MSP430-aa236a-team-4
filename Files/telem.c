@@ -1,13 +1,10 @@
-#include <__cross_studio_io.h>    // for CrossStudio debugging
+//#include <__cross_studio_io.h>    // for CrossStudio debugging
 
 #include "adc.h"                  // Req'd because we reference TaskADC()
 #include "main.h"                 // Application header
-#include "salvo.h"                // 
 #include "msp430.h"               // Contains MSP430-specific definitions like P2DIR
-#include "timestamp_print.h"
-#include "ui.h"
-#include "telem.h"
-#include "io2.h"    
+#include "salvo.h"                // Req'd because we reference OSGetTicks()
+#include "telem.h"                //Self reference
 
 
 
@@ -31,6 +28,7 @@ Returns an integer corresponding to the charge status
 
 
 int RtnStatus(void){
+  //Initialize variables
   float charge;
   int status;
   int fault;
@@ -38,24 +36,15 @@ int RtnStatus(void){
   float voltage;
   int test_fault;
   int test_acpr;
-  float usb;
+  
+  //Read values
   charge = RtnCHRG();
   voltage = RtnBattVoltage();
-  
   acpr = check_acpr();
   fault = check_fault();
   checkChargeTime();
 
-  usb = Rtn5VUSB();
-
-  //Status 1 = charging, charge is at 0v (constant c)
-  //Status 2 = charging, charge is around 2v (constant v)
-  //Status 3 = charging, charge terminated
-  //Status 4 = not charging, voltage >4.13
-  //Status 5 = discharging, partially charged
-  //Status 6 = discharging, almost dead
-  //Status 1 = discharging, is dead
-  //ONLY USED FOR TESTING - delete the fault = 0 line!!!
+  //Catagorize into state based on values
   if (fault == -1){
     if(acpr == 0){
       if (charge <= 0.5){status = 1;}
@@ -71,6 +60,7 @@ int RtnStatus(void){
   return (status);
 }
 
+//Checks if there is a fault
 int check_fault(void){
   int fault;
   P2DIR &= ~BIT7;
@@ -97,6 +87,7 @@ int check_acpr(void){
   return acpr;
 }
 
+//Keeps track of where the charge started
 static long charge_start;
 int checkChargeTime(void){
     int charge_time;

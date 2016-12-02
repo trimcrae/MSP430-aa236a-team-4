@@ -1,9 +1,10 @@
 #include "io2.h"                   // Good to self-reference
 #include "main.h"                 // Application header
 #include "msp430.h"               // Contains MSP430-specific definitions like P2DIR
-#include "telem.h"                // Req'd because we call RtnStatus
-#include "salvo.h"                // Req'd because we call e.g. OSDelay() 
-#include "usart_uart_msg_ts.h"    // Req'd because we call usart_uart1_msg_ts()
+#include "salvo.h"                // Req'd because we call OSDelay() 
+#include "telem.h"                // Req'd because we call RtnStatus()
+#include "timestamp_print.h"      // Req'd becayse we call timestamp_print()
+
 
 
 /******************************************************************************
@@ -30,6 +31,7 @@ void TaskIO(void) {
     //Status 6 = discharging, almost dead
     //Status 1 = discharging, is dead
       case 1:
+      //blink one light
         SetLED0();
         OS_Delay(50);
         ClrLED0();
@@ -37,6 +39,7 @@ void TaskIO(void) {
         break;
 
       case 2:
+      //blink two lights
         SetLED0();
         SetLED1();
         OS_Delay(50);
@@ -46,6 +49,7 @@ void TaskIO(void) {
         break; 
               
        case 3:
+       //blink three lights
         SetLED0();
         SetLED1();
         SetLED2();
@@ -57,6 +61,7 @@ void TaskIO(void) {
         break;    
 
        case 4:
+       //flash three lights
         SetLED0();
         SetLED1();
         SetLED2();
@@ -68,6 +73,7 @@ void TaskIO(void) {
         break;  
    
        case 5:
+       //flash two lights
         SetLED0();
         SetLED1();
         OS_Delay(20);
@@ -77,6 +83,7 @@ void TaskIO(void) {
         break;  
 
        case 6:
+       //flash one light
         SetLED0();
         OS_Delay(15);
         ClrLED0();
@@ -84,15 +91,13 @@ void TaskIO(void) {
         break;  
 
        case 7:
-        SetLED1();
+       //no lights
         OS_Delay(50);
-        ClrLED2();
         break;
 
        case 8:
-        SetLED2();
-        OS_Delay(50);
-        ClrLED2();
+       // no lights
+        OS_Delay(100);
         break;
     }
   }

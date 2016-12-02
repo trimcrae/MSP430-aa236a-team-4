@@ -1,14 +1,17 @@
-#include <__cross_studio_io.h>    // for CrossStudio debugging
+//#include <__cross_studio_io.h>    // for CrossStudio debugging
 
 #include "adc.h"                  // Req'd because we reference TaskADC()
 #include "batt.h"                 // Req'd because we reference TaskBatt()
 #include "init.h"                 // Req'd because we call Init()
-#include "io2.h"                   // Req'd because we reference TaskIO()
+#include "io2.h"                  // Req'd because we reference TaskIO()
 #include "main.h"                 // Application header
+#include "telem.h"                // Req'd because we call checkChargeTime()
+#include "timestamp_print.h"      // Req'd becayse we call timestamp_print()
 #include "salvo.h"                // Req'd because we call e.g. OSInit() 
+#include "ui.h"                   // Req'd because we call TaskDoCmds()
 #include "usart_uart.h"           // Req'd because we call usart_uart1_puts()
 #include "usart_uart_msg_ts.h"    // Req'd because we call usart_uart1_msg_ts()
-#include "ui.h"
+
 
 
 /******************************************************************************
@@ -24,7 +27,8 @@ char strTmp[256];  // General-purpose buffer for creating long strings
 /******************************************************************************
 ****                                                                       ****
 **                                                                           **
-Here is a place to put doxygen-compatible comments & tags, etc. for main()
+main()
+Cycles through prioritized tasks
 
 **                                                                           **
 ****                                                                       ****
@@ -49,9 +53,13 @@ void main(void) {
 
   // Since ISRs are present, we must enable interrupts globally. No need to touch interrupts again.
   __enable_interrupt();
+
+  // Enable all the MSP430 functions we need
   setChargerOn();
   setProgOn();
   setVCCCurrentChipOn();
+
+  //Keep track of charging time
   checkChargeTime();
 
   // OK to use, but keep in mind that it has weird run-time effects and requires that the FET

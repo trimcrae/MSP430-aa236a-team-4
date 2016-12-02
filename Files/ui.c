@@ -2,22 +2,24 @@
 
 #include "adc.h"                  // Req'd because we reference TaskADC()
 #include "main.h"                 // Application header
-#include "salvo.h"                // 
 #include "msp430.h"               // Contains MSP430-specific definitions like P2DIR
-#include "timestamp_print.h"
-#include "ui.h"
-#include "telem.h"
-#include "io2.h"      
+#include "salvo.h"                // Calls OSDelay
+#include "telem.h"                // Calls e.g. chackFault    
+#include "timestamp_print.h"      // Calls timestamp_print()
+#include "ui.h"                   // Self reference
+
 
 
 /******************************************************************************
 ****                                                                       ****
 **                                                                           **
 TaskDoCmds()
+Executes user input
 
 **                                                                           **
 ****                                                                       ****
 ******************************************************************************/
+  //Initialize Variables
   char command;
   int temp;
   float VUSB;
@@ -33,18 +35,22 @@ TaskDoCmds()
 
 
 void TaskDoCmds(void){ 
+  //Message that task is starting
   timestamp_print(STR_TASK_DOCMDS ": Starting.");
 
   while(1){
+    //read user input
     command = usart_uart1_getchar();
 
     switch(command) {
-
+      
+      //Give help
       case 'h'  :
         sprintf(strTmp, STR_TASK_DOCMDS ": h: Commands: {h, i, r, t, v}");
         timestamp_print(strTmp);
         break; 
 
+      //Give system information
       case 'i'  :
         VUSB = Rtn5VUSB();
         chargeTime = checkChargeTime();
@@ -68,18 +74,21 @@ void TaskDoCmds(void){
         timestamp_print(strTmp);
         break; 
 
+     //Resets system
      case 'r'  :
         sprintf(strTmp, STR_TASK_DOCMDS ": r: Reset (via WDT) in 1 s.");
         timestamp_print(strTmp);
         WDTCTL = 0xDEAD; //reset via WDT
         break; 
 
+    //Gives system temperature
      case 't'  :
         temp = RtnOnChipTemp();
         sprintf(strTmp, STR_TASK_DOCMDS ": Ambient temp is %d C", temp);
         timestamp_print(strTmp);
         break; 
 
+    //Gives Version Number
      case 'v'  :
         timestamp_print(STR_TASK_DOCMDS ":   v" VERSION_NUM " built on "__DATE__" at "__TIME__".");
         break;

@@ -1,7 +1,8 @@
-#include "config.h"
-#include "timestamp_print.h"
-#include "usart_uart.h"
 #include <salvo.h>
+
+#include "config.h"
+#include "timestamp_print.h"  //Self reference
+#include "usart_uart.h"
 
 
 /******************************************************************************
@@ -26,6 +27,7 @@ void timestamp_print(const char * cP) {
   int minutes = (ticks % 360000) / 100 / 60;
   int hours = ticks / 100 / 60 / 60;
 
+  //Formats time into hours minutes seconds and hundredths of a second
   sprintf(strTicks, "1|%02d:%02d:%02d.%02d ",hours, minutes, seconds, hundredths);
 
   // Let's find out how big this string is ...
