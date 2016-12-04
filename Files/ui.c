@@ -51,12 +51,11 @@ void TaskDoCmds(void){
         MCU = RtnVCCMCU();
         VCC = RtnVCC();
         VCCcurrent = RtnVCCCurrent();
+        VCCcurrent = VCCcurrent * -1;
         temp = RtnOnChipTemp();
         //Prints out the value of vcc current for debugging
-        sprintf(strTmp, "after pass %.2f", VCCcurrent);
-        timestamp_print(strTmp);
-        sprintf(strTmp, "p2in %d", P2IN);
-        timestamp_print(strTmp);
+        //sprintf(strTmp, "after pass %.2f", VCCcurrent);
+        //timestamp_print(strTmp);
         batt = RtnBattVoltage();
         prog = RtnPROG();
         chrg = RtnCHRG();

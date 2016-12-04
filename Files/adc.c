@@ -183,12 +183,18 @@ difference = 27mA reported.
 ****                                                                       ****
 ******************************************************************************/
 #if 1
+//int after_filter_int;
+float after_filter_float;
 float RtnVCCCurrent(void) {
   if (1) {
     //Prints out the raw values that are then filtered
-    sprintf(strTmp, "before filter vcc current value 1: %.2f  value 2: %.2f", v_u16_vcc_mcu, v_u16_vcc);
-    timestamp_print(strTmp);
-    return (((v_u16_vcc_mcu * SCALE_VCC_MCU * REF_VCC_MCU)-(v_u16_vcc * SCALE_VCC * REF_VCC))*(1000/(0.09*4095)));
+    //sprintf(strTmp, "before filter vcc current value 1: %d  value 2: %d", v_u16_vcc_mcu, v_u16_vcc);
+    //timestamp_print(strTmp);
+    //after_filter_int = (((v_u16_vcc_mcu * SCALE_VCC_MCU * REF_VCC_MCU)-(v_u16_vcc * SCALE_VCC * REF_VCC))*(1000/(0.09*4095)));
+    after_filter_float = (((v_u16_vcc_mcu * SCALE_VCC_MCU * REF_VCC_MCU)-(v_u16_vcc * SCALE_VCC * REF_VCC))*(1000/(0.09*4095)));
+    //sprintf(strTmp, "after filter: %d  %f", after_filter_int, after_filter_float);
+    //timestamp_print(strTmp);
+    return after_filter_float;
   }
   else {
     return 0;
