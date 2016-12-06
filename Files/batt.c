@@ -14,6 +14,14 @@ TaskBatt()
 **                                                                           **
 ****                                                                       ****
 ******************************************************************************/
+/**
+ * @file batt.c
+ * @brief Prints out the battery voltage on a 2-second basis
+ */
+
+/** 
+ * TaskBatt prints out the battery voltage at 2 second intervals.
+ */
 void TaskBatt(void) {
   timestamp_print(STR_TASK_BATT ": Starting.");
 

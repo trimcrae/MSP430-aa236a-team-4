@@ -1,36 +1,48 @@
-#include <__cross_studio_io.h>    // for CrossStudio debugging
+//#include <__cross_studio_io.h>    // for CrossStudio debugging
 
 #include "adc.h"                  // Req'd because we reference TaskADC()
 #include "main.h"                 // Application header
-#include "salvo.h"                // 
 #include "msp430.h"               // Contains MSP430-specific definitions like P2DIR
-#include "timestamp_print.h"
-#include "ui.h"
-#include "telem.h"
-#include "io2.h"    
-
+#include "salvo.h"                // Req'd because we reference OSGetTicks()
+#include "telem.h"                //Self reference
 
 
 /******************************************************************************
 ****                                                                       ****
 **                                                                           **
-RtnStatus()
-Returns an integer corresponding to the charge status
-1: Charging in CC mode
-2: Charging in CV mode
-3: Charging - Fully Charged
-4: Discharging - Fully Charged
-5: Discharging - Partially Charged
-6: Discharging - Nearly Dead
-7: Discharging - Dead
-8: Issue
+ RtnStatus()
+ Returns an integer corresponding to the charge status
+ 1: Charging in CC mode
+ 2: Charging in CV mode
+ 3: Charging - Fully Charged
+ 4: Discharging - Fully Charged
+ 5: Discharging - Partially Charged
+ 6: Discharging - Nearly Dead
+ 7: Discharging - Dead
+ 8: Issue
 
 **                                                                           **
 ****                                                                       ****
 ******************************************************************************/
+/**
+ * @file telem.c
+ * @brief This file returns the status of the battery in 8 different situations.
+ */
 
+/**
+ * RtnStatus() returns an integer corresponding to the charge status in 8 situations.
+ * 1: Charging in CC mode
+ * 2: Charging in CV mode
+ * 3: Charging - Fully Charged
+ * 4: Discharging - Fully Charged
+ * 5: Discharging - Partially Charged
+ * 6: Discharging - Nearly Dead
+ * 7: Discharging - Dead
+ * 8: Issue
+ */
 
 int RtnStatus(void){
+  //Initialize variables
   float charge;
   int status;
   int fault;
@@ -38,24 +50,15 @@ int RtnStatus(void){
   float voltage;
   int test_fault;
   int test_acpr;
-  float usb;
+  
+  //Read values
   charge = RtnCHRG();
   voltage = RtnBattVoltage();
-  
   acpr = check_acpr();
   fault = check_fault();
   checkChargeTime();
 
-  usb = Rtn5VUSB();
-
-  //Status 1 = charging, charge is at 0v (constant c)
-  //Status 2 = charging, charge is around 2v (constant v)
-  //Status 3 = charging, charge terminated
-  //Status 4 = not charging, voltage >4.13
-  //Status 5 = discharging, partially charged
-  //Status 6 = discharging, almost dead
-  //Status 1 = discharging, is dead
-  //ONLY USED FOR TESTING - delete the fault = 0 line!!!
+  //Catagorize into state based on values
   if (fault == -1){
     if(acpr == 0){
       if (charge <= 0.5){status = 1;}
@@ -71,6 +74,10 @@ int RtnStatus(void){
   return (status);
 }
 
+//Checks if there is a fault
+/**
+ * check_fault observes if a fault does exist. If it does, it returns the value of -1.
+ */
 int check_fault(void){
   int fault;
   P2DIR &= ~BIT7;
@@ -83,6 +90,9 @@ int check_fault(void){
 }
 
 //Checks the acpr (whether the board is plugged in or not
+/**
+ * check_acpr checks bit 6 of pin 2 to see if ACPR is equal to 0, and thus plugged in for charging.
+ */
 int check_acpr(void){
   int acpr;
   int acpr_step1;
@@ -97,9 +107,16 @@ int check_acpr(void){
   return acpr;
 }
 
+//Keeps track of where the charge started
 static long charge_start;
-int checkChargeTime(void){
-    int charge_time;
+/**
+ * checkChargeTime keeps track of the charge time, returning the total value in seconds.
+ * charge_start always exists because it is initialized outside of the function.
+ * Thus if you charge for a few hours, then unplug and plug the USB back in, the charge time will start over
+ * at 0 seconds.
+ */
+long checkChargeTime(void){
+    long charge_time;
     int acpr;
     long current_ticks;
     acpr = check_acpr();

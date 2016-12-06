@@ -4,9 +4,11 @@
     <configuration
       Name="Common"
       Target="MSP430F1611"
+      build_output_file_name="$(OutDir)/$(ProjectName)$(EXE)"
       build_use_hardware_multiplier="16-Bit Multiplier"
       c_user_include_directories=".;C:\\SSDL\\AA236A_1516_aek_HA2\\SSDL"
       linker_memory_map_file="$(PackagesDir)/targets/msp430/MSP430F1611.xml"
+      linker_output_format="hex"
       linker_section_placement_file="$(StudioDir)/targets/section_placement_info_ab_iv16.xml"
       msp430_debug_interface="JTAG"
       msp430_identify_string="MSP430F1611"

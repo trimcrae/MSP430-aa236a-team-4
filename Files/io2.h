@@ -16,6 +16,9 @@ extern void SetLED1(void);
 extern void ClrLED1(void);
 extern void SetLED2(void);
 extern void ClrLED2(void);
+extern void setChargerOn(void);
+extern void setProgOn(void);
+extern void setVCCCurrentChipOn(void);
 
 #define STR_TASK_IO  "TaskIO"
 

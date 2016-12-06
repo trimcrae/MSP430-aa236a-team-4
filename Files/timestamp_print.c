@@ -1,19 +1,19 @@
-#include "config.h"
-#include "timestamp_print.h"
-#include "usart_uart.h"
 #include <salvo.h>
 
+#include "config.h"
+#include "timestamp_print.h"  //Self reference
+#include "usart_uart.h"
 
-/******************************************************************************
-****                                                                       ****
-**                                                                           **
-usart_uart1_msg_ts()
 
-Output a time-stamped message.
-
-**                                                                           **
-****                                                                       ****
-******************************************************************************/
+/**
+ * @file timestamp_print.c 
+ * @brief This file outputs the timestamp each time it is called.
+ */
+/**
+ * Takes the tick units inherent to the chip and converts it into readable
+ * hh:mm:ss:hh output. It is called before each task/function in the code.
+ * The usart_uart1 functions are givens, and are used to retrieve the ticks.
+ */
 void timestamp_print(const char * cP) {
 
   unsigned int size;
@@ -26,6 +26,7 @@ void timestamp_print(const char * cP) {
   int minutes = (ticks % 360000) / 100 / 60;
   int hours = ticks / 100 / 60 / 60;
 
+  //Formats time into hours minutes seconds and hundredths of a second
   sprintf(strTicks, "1|%02d:%02d:%02d.%02d ",hours, minutes, seconds, hundredths);
 
   // Let's find out how big this string is ...

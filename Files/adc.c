@@ -1,3 +1,9 @@
+/**
+ * @file adc.c
+ * @brief This file is minimally changed except for the RtnVCCCurrent function for unknown errors
+ * we were receiving. Thus we won't document the rest of this.
+ */
+
 #include "main.h"
 #include "adc.h"
 #include <msp430.h>
